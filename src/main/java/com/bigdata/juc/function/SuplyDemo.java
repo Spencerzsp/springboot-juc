@@ -19,7 +19,7 @@ public class SuplyDemo {
 //            }
 //        };
 
-        Supplier<Integer> supplier = () -> {return 1024;};
+        Supplier<Integer> supplier = () -> 1024;
 
         System.out.println(supplier.get());
     }

@@ -21,7 +21,7 @@ public class FunctionDemo {
 //            }
 //        };
 
-        Function<String, Object> function = s -> {return s + "_lambda";};
+        Function<String, Object> function = s -> s + "_lambda";
 
         System.out.println(function.apply("abc"));
     }

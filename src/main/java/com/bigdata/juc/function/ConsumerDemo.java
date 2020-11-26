@@ -19,7 +19,7 @@ public class ConsumerDemo {
 //            }
 //        };
 
-        Consumer<String> consumer = (str) -> { System.out.println(str); };
+        Consumer<String> consumer = (str) -> System.out.println(str);
         consumer.accept("haha");
     }
 }

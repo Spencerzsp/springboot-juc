@@ -22,7 +22,7 @@ public class PredicateDemo {
 //            }
 //        };
 
-        Predicate<String> predicate = (String s) -> { return s.isEmpty(); };
+        Predicate<String> predicate = (String s) -> s.isEmpty();
 
         System.out.println(predicate.test("a"));
     }

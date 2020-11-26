@@ -31,5 +31,6 @@ public class CountDownLatchDemo {
         countDownLatch.await();
 
         System.out.println("Close door");
+
     }
 }
