@@ -19,7 +19,8 @@ public class ConsumerDemo {
 //            }
 //        };
 
-        Consumer<String> consumer = (str) -> System.out.println(str);
-        consumer.accept("haha");
+//        Consumer<String> consumer = str -> System.out.println(str);
+        Consumer<String> consumer = System.out::println;
+        consumer.accept("消费型接口，测试lambda表达式！");
     }
 }

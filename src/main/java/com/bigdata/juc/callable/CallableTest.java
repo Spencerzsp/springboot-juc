@@ -20,6 +20,8 @@ public class CallableTest {
         MyThread thread = new MyThread();
         FutureTask<String> futureTask = new FutureTask<>(thread);
 
+        new Thread(new FutureTask<String>(new MyThread())).start();
+
         // 使用callable的启动方式
         new Thread(futureTask).start();
 

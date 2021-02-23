@@ -21,6 +21,13 @@ public class TestDemo {
 //            }, String.valueOf(i)).start();
 //        }
 
-        System.out.println(1 << 3);
+//        System.out.println(1 << 3);
+
+        Thread thread1 = new Thread(() -> {
+            System.out.println("线程1");
+        }, "haha");
+        thread1.start();
+
+        System.out.println(thread1.getName());
     }
 }

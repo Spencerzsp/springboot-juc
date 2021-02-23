@@ -14,17 +14,17 @@ public class FutureDemo {
     public static void main(String[] args) throws Exception {
 
         // 没有返回值的异步回调
-//        CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(() -> {
-//            try {
-//                TimeUnit.SECONDS.sleep(2);
-//                System.out.println(Thread.currentThread().getName() + "runAsync");
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//        });
-//
-//        System.out.println("111");
-//        completableFuture.get();
+        CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(() -> {
+            try {
+                TimeUnit.SECONDS.sleep(2);
+                System.out.println(Thread.currentThread().getName() + "runAsync");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        System.out.println("111");
+        completableFuture.get();
 
         // 有返回值的异步回调
         CompletableFuture<Integer> completableFuture2 = CompletableFuture.supplyAsync(() -> {

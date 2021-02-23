@@ -22,7 +22,8 @@ public class FunctionDemo {
 //        };
 
         Function<String, Object> function = s -> s + "_lambda";
+        Function<String, String> thenFuntion = function.andThen(str -> str + "_haha");
 
-        System.out.println(function.apply("abc"));
+        System.out.println(thenFuntion.apply("abc"));
     }
 }

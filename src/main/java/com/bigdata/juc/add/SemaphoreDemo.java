@@ -15,7 +15,7 @@ public class SemaphoreDemo {
     public static void main(String[] args) {
 
         // 设置线程数量：5个车位
-        Semaphore semaphore = new Semaphore(3);
+        Semaphore semaphore = new Semaphore(5);
 
         for (int i = 1; i <= 5 ; i++) {
             new Thread(() -> {
